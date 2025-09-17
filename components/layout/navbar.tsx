@@ -42,7 +42,7 @@ export function Navbar() {
   ]
 
   return (
-    <header className="border-b bg-white/80 backdrop-blur-sm dark:bg-gray-900/80 sticky top-0 z-50">
+    <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
@@ -180,7 +180,12 @@ export function Navbar() {
                   <Button variant="ghost">Sign In</Button>
                 </Link>
                 <Link href="/auth/signup">
-                  <Button>Get Started</Button>
+                  <Button
+                    className="bg-black text-white hover:bg-gray-800 transition-colors"
+                    onClick={() => console.log("[v0] Get Started button clicked")}
+                  >
+                    Get Started
+                  </Button>
                 </Link>
               </div>
 
@@ -215,7 +220,12 @@ export function Navbar() {
                           </Button>
                         </Link>
                         <Link href="/auth/signup" onClick={() => setIsOpen(false)}>
-                          <Button className="w-full">Get Started</Button>
+                          <Button
+                            className="w-full bg-black text-white hover:bg-gray-800"
+                            onClick={() => console.log("[v0] Mobile Get Started button clicked")}
+                          >
+                            Get Started
+                          </Button>
                         </Link>
                       </div>
                     </div>
