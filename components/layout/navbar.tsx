@@ -180,12 +180,7 @@ export function Navbar() {
                   <Button variant="ghost">Sign In</Button>
                 </Link>
                 <Link href="/auth/signup">
-                  <Button
-                    className="bg-black text-white hover:bg-gray-800 transition-colors"
-                    onClick={() => console.log("[v0] Get Started button clicked")}
-                  >
-                    Get Started
-                  </Button>
+                  <Button className="bg-black text-white hover:bg-gray-800 transition-colors">Get Started</Button>
                 </Link>
               </div>
 
@@ -220,12 +215,7 @@ export function Navbar() {
                           </Button>
                         </Link>
                         <Link href="/auth/signup" onClick={() => setIsOpen(false)}>
-                          <Button
-                            className="w-full bg-black text-white hover:bg-gray-800"
-                            onClick={() => console.log("[v0] Mobile Get Started button clicked")}
-                          >
-                            Get Started
-                          </Button>
+                          <Button className="w-full bg-black text-white hover:bg-gray-800">Get Started</Button>
                         </Link>
                       </div>
                     </div>
